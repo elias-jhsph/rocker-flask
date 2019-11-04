@@ -14,6 +14,6 @@ RUN apt update && \
     virtualenv -p /usr/bin/python3.7 venv && \
     . /venv/bin/activate && \
     pip3 install -r /requirements.txt && \
-    Rscript -e "install.packages(c('knitr','kableExtra','htmlTable','htmltools'), method='auto', repos='http://cran.us.r-project.org')"
+    Rscript --vanilla install2.R
 
 CMD /venv/bin/gunicorn -b :$PORT main:app
