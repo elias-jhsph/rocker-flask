@@ -15,5 +15,3 @@ RUN apt update && \
     . /venv/bin/activate && \
     pip3 install -r /requirements.txt && \
     Rscript --vanilla install2.R
-
-CMD /venv/bin/gunicorn -b :$PORT main:app
