@@ -6,3 +6,4 @@ scrapy
 selenium
 whoswho
 google-cloud-storage
+six>=1.13.0
