@@ -7,3 +7,4 @@ selenium
 whoswho
 google-cloud-storage
 six>=1.13.0
+mailjet_rest
