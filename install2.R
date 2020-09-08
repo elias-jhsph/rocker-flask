@@ -1,1 +1,1 @@
-install.packages(c('knitr','kableExtra','htmlTable','htmltools','tidyverse','htmlwidgets','plotly', 'devtools', 'tidytext', 'wordcloud2', 'RColorBrewer', 'SnowballC', 'tm', 'topicmodels'), method='auto', repos='http://cran.us.r-project.org')
+install.packages(c('knitr','kableExtra','htmlTable','htmltools','tidyverse','htmlwidgets','plotly', 'devtools', 'tidytext', 'wordcloud', 'ggwordcloud', 'RColorBrewer', 'SnowballC', 'tm', 'topicmodels'), method='auto', repos='http://cran.us.r-project.org')
