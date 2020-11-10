@@ -15,5 +15,8 @@ install.packages(c(
   'SnowballC',
   'tm',
   'topicmodels',
-  'reshape2'
+  'reshape2',
+  'DiagrammeR',
+  'DiagrammeRsvg',
+  'rsvg'
 ), method='auto', repos='http://cran.us.r-project.org')
