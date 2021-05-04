@@ -10,4 +10,4 @@ six>=1.13.0
 mailjet_rest
 plotly
 xlrd
-selenium-wire
+selenium-requests
