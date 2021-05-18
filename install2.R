@@ -18,5 +18,6 @@ install.packages(c(
   'reshape2',
   'DiagrammeR',
   'DiagrammeRsvg',
-  'rsvg'
+  'rsvg',
+  'qdap'
 ), method='auto', repos='http://cran.us.r-project.org')
