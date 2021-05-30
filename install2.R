@@ -19,5 +19,6 @@ install.packages(c(
   'DiagrammeR',
   'DiagrammeRsvg',
   'rsvg',
+  'stringdist',
   'qdap'
 ), method='auto', repos='http://cran.us.r-project.org')
