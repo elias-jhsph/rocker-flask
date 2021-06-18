@@ -11,3 +11,4 @@ mailjet_rest
 plotly
 xlrd
 selenium-requests
+google-api-python-client
