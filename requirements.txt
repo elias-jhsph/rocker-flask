@@ -13,3 +13,4 @@ xlrd
 selenium-requests
 google-api-python-client
 gspread
+basecampy3
