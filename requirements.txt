@@ -11,6 +11,7 @@ mailjet_rest
 plotly
 xlrd
 selenium-requests
+selenium-wire
 google-api-python-client
 gspread
 basecampy3
