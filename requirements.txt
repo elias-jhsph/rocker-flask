@@ -15,3 +15,4 @@ selenium-wire
 google-api-python-client
 gspread
 basecampy3
+XlsxWriter
