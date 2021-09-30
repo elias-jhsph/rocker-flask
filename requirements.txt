@@ -12,6 +12,7 @@ plotly
 xlrd
 selenium-requests
 selenium-wire
+cffi
 google-api-python-client
 gspread
 basecampy3
