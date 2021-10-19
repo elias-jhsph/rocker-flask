@@ -1,5 +1,5 @@
 install.packages(c(
-  'feather',
+  'arrow',
   'knitr',
   'kableExtra',
   'htmlTable',
