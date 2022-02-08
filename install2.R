@@ -21,5 +21,6 @@ install.packages(c(
   'DiagrammeRsvg',
   'rsvg',
   'stringdist',
-  'qdap'
+  'qdap',
+  'janitor'
 ), method='auto', repos='http://cran.us.r-project.org')
