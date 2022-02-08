@@ -14,5 +14,6 @@ RUN apt update && \
     apt install python3.7-dev python3.7 python3-pip libcurl4-openssl-dev libxml2-dev libssl-dev chromium-browser chromium-chromedriver pandoc gsl-bin libgsl0-dev libv8-dev librsvg2-dev r-cran-rjava -y && \
     update-alternatives --install /usr/bin/python python3 /usr/bin/python3.7 10 && \
     apt-get install screen -y && \
+    python -m pip install pip --upgrade -y && \
     python3.7 -m pip install -r /requirements.txt && \
     Rscript --vanilla install2.R
