@@ -22,5 +22,8 @@ install.packages(c(
   'rsvg',
   'stringdist',
   'qdap',
-  'janitor'
+  'janitor',
+  'staplr',
+  'qpdf',
+  'pagedown'
 ), method='auto', repos='http://cran.us.r-project.org')
