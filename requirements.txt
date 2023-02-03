@@ -19,3 +19,5 @@ gspread
 basecampy3
 XlsxWriter
 firebase-admin
+google-cloud-core
+google-cloud-compute
