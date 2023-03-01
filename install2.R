@@ -25,5 +25,7 @@ install.packages(c(
   'janitor',
   'staplr',
   'qpdf',
-  'pagedown'
+  'pagedown',
+  'shape',
+  'writexl'
 ), method='auto', repos='http://cran.us.r-project.org')
