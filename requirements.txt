@@ -9,6 +9,7 @@ google-cloud-storage
 six>=1.13.0
 mailjet_rest
 plotly
+openpyxl
 xlrd
 selenium==3.141.0
 selenium-requests==1.3
