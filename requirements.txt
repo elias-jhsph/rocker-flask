@@ -1,5 +1,5 @@
 pyparsing==2.4.7
-Flask==2.0.3
+Flask==2.3.2
 gunicorn==19.9.0
 smartsheet-python-sdk
 pandas<1.3
