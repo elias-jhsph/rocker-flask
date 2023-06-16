@@ -1,10 +1,8 @@
-FROM rocker/r-ubuntu:18.04
+FROM rocker/r-ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ADD requirements.txt /requirements.txt
 ADD . /
-
 
 RUN apt update && \
     apt install gcc && \
