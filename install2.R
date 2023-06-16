@@ -14,7 +14,6 @@ install.packages(c(
   'ggwordcloud',
   'RColorBrewer',
   'SnowballC',
-  'tm',
   'topicmodels',
   'reshape2',
   'DiagrammeR',

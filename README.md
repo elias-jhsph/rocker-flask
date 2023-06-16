@@ -1,5 +1,6 @@
 # rocker-flask
-really specific Ubuntu docker with R by rocker and python 3.7 added with specific R packages included
+really specific Ubuntu docker with R by rocker and python 3.11 added with 
+specific R packages and Python modules included
 
 ## m1 Install Instruction for R 4.1.1
 
