@@ -10,6 +10,10 @@ RUN apt update && \
     wget https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/${CHROMIUM_REVISION}/chrome-linux.zip -O chromium.zip && \
     unzip chromium.zip -d /opt/chromium && \
     ln -s /opt/chromium/chrome-linux/chrome /usr/bin/chromium && \
+    CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$(/usr/bin/chromium --version | cut -d ' ' -f2 | cut -d '.' -f1)") && \
+    wget https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip && \
+    unzip chromedriver_linux64.zip -d /usr/bin && \
+    chmod +x /usr/bin/chromedriver && \
     apt install -y gcc software-properties-common libffi-dev python3.11-venv libcurl4-openssl-dev libxml2-dev libssl-dev pandoc gsl-bin libgsl0-dev libv8-dev librsvg2-dev r-cran-rjava libfribidi-dev libharfbuzz-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev && \
     add-apt-repository ppa:deadsnakes/ppa -y && \
     update-alternatives --install /usr/bin/python python3 /usr/bin/python3.11 10 && \
@@ -19,4 +23,5 @@ RUN apt update && \
     . env/bin/activate && \
     python3.11 -m pip install -r requirements.txt && \
     Rscript --vanilla install2.R
+
     
