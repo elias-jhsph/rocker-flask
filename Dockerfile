@@ -7,7 +7,7 @@ ADD . /
 RUN apt update && \
     apt install -y wget curl unzip libnss3 libgconf-2-4 && \
     CHROMIUM_REVISION=$(curl -sS "https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2FLAST_CHANGE?alt=media") && \
-    wget https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F${CHROMIUM_REVISION}%2Fchrome-linux.zip -O chromium.zip && \
+    wget https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/${CHROMIUM_REVISION}/chrome-linux.zip -O chromium.zip && \
     unzip chromium.zip -d /opt/chromium && \
     ln -s /opt/chromium/chrome-linux/chrome /usr/bin/chromium && \
     apt install -y gcc software-properties-common libffi-dev python3.11-venv libcurl4-openssl-dev libxml2-dev libssl-dev pandoc gsl-bin libgsl0-dev libv8-dev librsvg2-dev r-cran-rjava libfribidi-dev libharfbuzz-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev && \
@@ -19,3 +19,4 @@ RUN apt update && \
     . env/bin/activate && \
     python3.11 -m pip install -r requirements.txt && \
     Rscript --vanilla install2.R
+    
