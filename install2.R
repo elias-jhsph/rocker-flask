@@ -26,5 +26,6 @@ install.packages(c(
   'qpdf',
   'pagedown',
   'shape',
-  'writexl'
+  'writexl',
+  'lpSolve'
 ), method='auto', repos='http://cran.us.r-project.org')
