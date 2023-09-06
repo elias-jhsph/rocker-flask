@@ -1,4 +1,5 @@
 install.packages(c(
+  'assertthat',
   'feather',
   'knitr',
   'kableExtra',
