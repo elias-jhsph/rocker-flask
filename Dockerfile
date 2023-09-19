@@ -12,7 +12,7 @@ RUN apt update && \
     wget https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip && \
     unzip chromedriver_linux64.zip -d /usr/bin && \
     chmod +x /usr/bin/chromedriver && \
-    apt install -y gcc software-properties-common libffi-dev python3.11-venv libcurl4-openssl-dev libxml2-dev libssl-dev pandoc gsl-bin libgsl0-dev libv8-dev librsvg2-dev r-cran-rjava libfribidi-dev libharfbuzz-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libpoppler-cpp-dev && \
+    apt install -y gcc software-properties-common libffi-dev python3.11-venv libcurl4-openssl-dev libxml2-dev libssl-dev pandoc gsl-bin libgsl0-dev libv8-dev librsvg2-dev r-cran-rjava libfribidi-dev libharfbuzz-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev && \
     add-apt-repository ppa:deadsnakes/ppa -y && \
     update-alternatives --install /usr/bin/python python3 /usr/bin/python3.11 10 && \
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
